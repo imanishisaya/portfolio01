@@ -122,6 +122,68 @@ img {
   vertical-align: bottom;
 }
 
+header {
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background-color: #000;
+}
+
+header img {
+  height: 25px;
+  width: 100px;
+  padding-top: 15px;
+}
+
+.header-nav {
+  background-color: #000;
+  text-align: left;
+  transform: translateY(-110%);
+  transition: 0.5s;
+}
+
+.header-menu li {
+  padding: 18px 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.header-menu li a {
+  font-family: 'Modern Antiqua', 'Noto Sans JP' , serif;
+  font-size: 14px;
+}
+
+.header-menu a:hover {
+  text-decoration: underline;
+}
+
+.header-icon .fab {
+  padding: 12px 10px;
+}
+
+.header-icon {
+  border-bottom: 1px solid #fff;
+}
+
+.check-btn:checked ~ .header-nav {
+  transform: translateY(0%);
+}
+
+.check-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transform: scale(1.5);
+  opacity: 0;
+  z-index: 1000;
+}
+
+.fas {
+  float: right;
+  padding-top: 22px;
+  padding-right: 20px;
+}
+
 .sidebar {
   width: 20%;
   height: 100%;
@@ -288,3 +350,4 @@ footer p {
 footer a {
   color: blue;
 }
+
